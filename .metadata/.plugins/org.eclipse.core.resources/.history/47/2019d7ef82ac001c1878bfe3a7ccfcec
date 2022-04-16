@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	public static void main(String[] args) {
+	Double area,dobArea,larg,alt;
+	
+	Scanner dado = new Scanner(System.in);
+	
+	System.out.println("Ola, Qual a largura do quadrado que você deseja saber a área?");
+	larg = dado.nextDouble();
+	System.out.println("Qual a altura do quadrado que você deseja saber a área?");
+	alt = dado.nextDouble();
+	dado.close();
+	
+	area = larg * alt;
+	dobArea = area * 2;
+	System.out.printf("O seu quadrado de largura igual a  %.2f e altura igual a %.2f possui uma area de %.2f "
+			+ "e o dobro dessa altura é de %f",larg,alt,area,dobArea);
+}
+}
